@@ -1,0 +1,141 @@
+body {
+    /*height: 100vh;*/
+}
+
+.copy {
+    text-align: center;
+}
+
+.light {
+    background: lightgrey;
+}
+
+.columns {
+    cursor: pointer;
+}
+
+.hero {
+    /*height: 12vh;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+}
+
+.title {
+    padding: 0;
+}
+.hero-body {
+    padding: 1rem;
+    margin: 0;
+}
+.column {
+    height: 24vh;
+    color: white;
+    /*position: relative;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.column .para {
+    display: none;
+    /*opacity: 0;*/
+}
+
+.column:hover > p.para {
+    display: inline-block;
+    /*opacity: 1;*/
+}
+
+.column .para{
+    /*margin: 0 auto;*/
+    /*text-align: center;*/
+    text-align: center;
+    margin: auto auto;
+    /*justify-content: center;*/
+    /*margin: 0 auto;*/
+}
+
+.button {
+    /*align-self: center;*/
+    /*justify-self: center;*/
+    /*place-self: center;*/
+    margin: 0 auto;
+
+}
+.access {
+    background: #a4373a;
+
+}
+.office {
+    background: #d83b01;
+
+}
+.planner {
+    background: #31752f;
+}
+.power {
+    background: #742774;
+
+}
+.sway {
+    background: #008272;
+
+}
+
+.comm-light {
+    background: #0078d4;
+}
+
+.note-light {
+    background: #7719aa;
+}
+
+.point-light {
+    background: #b7472a;
+}
+
+.teams-light {
+    background: #6264a7;
+}
+
+.word-light {
+    background: #2b579a;
+}
+.comm-dark {
+    background: #005a9e;
+}
+
+.note-dark {
+    background: #4c0f6c;
+}
+
+.point-dark {
+    background: #740912;
+}
+
+.teams-dark {
+    background: #33344A;
+}
+
+.word-dark {
+    background: #002050;
+}
+
+.excel-light {
+    background: #217346;
+}
+
+.excel-dark {
+    background: #004b1c;
+}
+
+.yammer-light {
+    background: #106ebe;
+}
+
+.yammer-dark {
+    background: #135995;
+}
+
+.visio {
+    background: #3955a3;
+}

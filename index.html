@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>97 Palettes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.4-build.3588/angular.min.js"></script>
+</head>
+
+<body>
+
+<!--<section class="hero is-dark">-->
+<!--    <div class="hero-body">-->
+<!--        <div class="container">-->
+<!--&lt;!&ndash;            <h1 class="title">97 Palettes</h1>&ndash;&gt;-->
+<!--&lt;!&ndash;            <h2 class="subtitle">Based on Microsoft Colors, Inspired by Flat UI Colors and Fluent UI</h2>&ndash;&gt;-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+    <div class="columns">
+        <div class="column comm-light">
+            Comm-light
+            <p class="para"> <a class="button btn-comm-l" data-clipboard-text="#0078d4" onclick="access('#0078d4')">
+                Copy
+            </a></p>
+        </div>
+
+        <div class="column word-light">
+            Word-light
+            <p class="para"> <a class="button btn-word-l" data-clipboard-text="#2b579a" onclick="access('#2b579a')">
+                Copy
+            </a></p>
+        </div>
+        <div class="column excel-light">
+            Excel-light
+            <p class="para"> <a class="button btn-excel-l" data-clipboard-text="#217346" onclick="access('#217346')">
+                Copy
+            </a></p>
+        </div>
+        <div class="column sway">
+            Sway
+            <p class="para"> <a class="button btn-sway" data-clipboard-text="#008272" onclick="access('#008272')">
+                Copy
+            </a></p>
+        </div>
+    </div>
+
+    <div class="columns">
+        <div class="column comm-dark">
+            Comm-dark
+            <p class="para"> <a class="button btn-comm-d" data-clipboard-text="#005a9e" onclick="access('#005a9e')">
+                Copy
+            </a></p>
+        </div>
+
+        <div class="column word-dark">
+            Word-dark
+            <p class="para"> <a class="button btn-word-d" data-clipboard-text="#002050" onclick="access('#002050')">
+                Copy
+            </a></p>
+        </div>
+        <div class="column excel-dark">
+            Excel-dark
+            <p class="para"> <a class="button btn-excel-d" data-clipboard-text="#004b1c" onclick="access('#004b1c')">
+                Copy
+            </a></p>
+        </div>
+        <div class="column planner">
+            Planner
+            <p class="para"> <a class="button btn-planner" data-clipboard-text="#31752f" onclick="access('#31752f')">
+                Copy
+            </a></p>
+        </div>
+    </div>
+
+    <div class="columns">
+        <div class="column teams-light">
+            Teams-light
+            <p class="para"> <a class="button btn-teams-l" data-clipboard-text="#6264a7" onclick="access('#6264a7')">
+                Copy
+            </a></p>
+        </div>
+        <div class="column note-light">
+            Note-light
+            <p class="para"> <a class="button btn-note-l" data-clipboard-text="#7719aa" onclick="access('#7719aa')">
+                Copy
+            </a></p>
+        </div>
+        <div class="column point-light">
+            Point-light
+            <p class="para"> <a class="button btn-point-l" data-clipboard-text="#b7472a" onclick="access('#b7472a')">
+                Copy
+            </a></p>
+        </div>
+
+        <div class="column office">
+            <p class="paragraph">Office</p>
+            <p class="para"> <a class="button btn-office" data-clipboard-text="#d83b01" onclick="access('#d83b01')">
+                Copy
+            </a></p>
+        </div>
+    </div>
+<div class="columns">
+    <div class="column teams-dark">
+        Teams-dark
+        <p class="para"> <a class="button btn-teams-d" data-clipboard-text="#33344A" onclick="access('#33344A')">
+            Copy
+        </a></p>
+    </div>
+    <div class="column note-dark">
+        Note-dark
+        <p class="para"> <a class="button btn-note-d" data-clipboard-text="#4c0f6c" onclick="access('#4c0f6c')">
+            Copy
+        </a></p>
+    </div>
+    <div class="column point-dark">
+        Point-dark
+        <p class="para"> <a class="button btn-point-d" data-clipboard-text="#740912" onclick="access('#740912')">
+            Copy
+        </a></p>
+    </div>
+    <div data-clipboard-text="#a4373a" class="column access">
+        Access
+        <p class="para"> <a class="button btn-access" data-clipboard-text="#a4373a" onclick="access('#a4373a')">
+            Copy
+        </a></p>
+    </div>
+    </div>
+
+<p class="copy">Based on Microsoft Colors, Inspired by Flat UI Colors and Fluent UI <br>
+    <a href="https://www.hondohondo.com">hondohondo.com</a>
+</p>
+
+
+<!--<footer class="footer">-->
+<!--   -->
+<!--</footer>-->
+
+
+<script>
+    new ClipboardJS('.btn-comm-l');
+    new ClipboardJS('.btn-word-l');
+    new ClipboardJS('.btn-excel-l');
+    new ClipboardJS('.btn-sway');
+
+    new ClipboardJS('.btn-comm-d');
+    new ClipboardJS('.btn-word-d');
+    new ClipboardJS('.btn-excel-d');
+    new ClipboardJS('.btn-planner');
+
+    new ClipboardJS('.btn-teams-l');
+    new ClipboardJS('.btn-note-l');
+    new ClipboardJS('.btn-point-l');
+    new ClipboardJS('.btn-office');
+
+    new ClipboardJS('.btn-teams-d');
+    new ClipboardJS('.btn-note-d');
+    new ClipboardJS('.btn-point-d');
+    new ClipboardJS('.btn-access');
+
+
+    function access(word) {
+        // swal('Hello world!');
+        swal({
+            timer: 1000,
+            title: "Copied!",
+            text: word,
+            icon: "success",
+            button: false
+        });
+    }
+
+    // function planner(word) {
+    //     // swal('Hello world!');
+    //     swal({
+    //         timer: 1000,
+    //         title: "Copied!",
+    //         text: word,
+    //         icon: "success",
+    //         button: false
+    //     });
+    // }
+
+</script>
+
+
+
+</body>
+</html>
+
+
+
+<!--<div class="container">-->
+<!--    <h1>97 Palettes - Based on Microsoft Colors, Inspired by Flat UI Colors and Fluent UI</h1>-->
+<!--</div>-->
+<!--<br>-->
+<!--    <div class="columns">-->
+
+
+<!--        <div class="column power">-->
+<!--            Power-->
+<!--            <p class="para"> <a class="button btn" data-clipboard-text="#a4373a" onclick="access()">-->
+<!--                Copy-->
+<!--            </a></p>-->
+<!--        </div>-->
+
+<!--    </div>-->
